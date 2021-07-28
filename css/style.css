@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN */
+
+.card{
+    margin: 20px;
+}
+
+.img_cover{
+    width: 150px;
+    height: 150px;
+}
+
+.img_cover img{
+    height: 100%;
+
+}
