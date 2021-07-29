@@ -1,5 +1,5 @@
 <?php 
-    include 'lista-dischi.php'
+    include __DIR__ . '/database/lista-dischi.php'
 ?>
 
 
