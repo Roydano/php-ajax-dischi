@@ -3,7 +3,8 @@ const app = new Vue(
         el: '#app',
         data: {
             url: window.location.href + '/../api/api-dischi.php',
-            dischi: ''
+            dischi: '',
+            generi: []
         },
         mounted(){
             axios
@@ -16,6 +17,19 @@ const app = new Vue(
                 .catch(error => {
                     console.log(error);
                 });
+
+            
         },
+        methods:{
+
+            filtraGeneri(array){
+                array.forEach(element => {
+                    if(!this.generi.includes(element.genre)){
+                        this.generi.push(element.genre)
+                    }
+
+                });
+            }
+        }
     }
 );

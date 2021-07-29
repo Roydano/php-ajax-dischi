@@ -19,3 +19,15 @@
     height: 100%;
 
 }
+
+.max_h{
+    max-height: 230px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+p{
+    font-size: 13px;
+}

@@ -26,13 +26,26 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <select name="genre" id="genre">
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- creo un ciclo for per ogni oggetto dentro l'array dischi -->
             <div v-for="music in dischi" class="col-3">
                 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-                    <img :src="music.poster" class="card-img-top" alt="music.title">
+                    <!-- stampo l'immagine -->
+                    <img :src="music.poster" class="card-img-top max_h" alt="music.title">
+
                     <div class="card-body">
+                        <!-- stampo le info -->
                         <h5 class="card-title">{{music.title}}</h5>
                         <p class="card-text">{{music.author}}</p>
-                        <p class="card-text">{{music.year}}</p>
+                        <p class="card-text"><span>{{music.year}}</span> - <span>{{music.genre}}</span></p>
                     </div>
                 </div>
             </div>
